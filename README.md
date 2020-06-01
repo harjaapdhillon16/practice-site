@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Kickoff GatsbyJs
 
 A starting point using ReactJs, bundled with awesome GatsbyJs v2.
@@ -38,3 +39,7 @@ yarn start
 yarn run build
 yarn serve
 ```
+=======
+# practice-site
+Lets Practice
+>>>>>>> a3c9c9a2c48a450c266b7b170d0b1286d61db544
