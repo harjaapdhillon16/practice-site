@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint global-require: 0 */
 
 import React from 'react';
@@ -6,7 +7,13 @@ import { Link } from 'gatsby';
 
 const Section = styled.section`
   padding: 1rem 1.5rem;
+  max-height: 5rem;
+  border: 0px solid ${props => props.theme.homepageBorderColor};
+  border-bottom-width: 1px;
   font-family: ${props => props.theme.primaryFontFamily};
+  figure {
+    max-height: 3rem;
+  }
   .navbar {
     background-color: transparent;
   }
@@ -35,6 +42,13 @@ const Section = styled.section`
     color: #fff;
     opacity: 0.6;
     border-radius: 4px;
+  }
+  .home {
+    max-height: 3rem;
+  }
+  .text {
+    color: ${props => props.theme.textColor};
+    font-weight: 300;
   }
 `;
 
@@ -68,7 +82,9 @@ export default class Header extends React.Component {
           >
             <div className="navbar-brand">
               <Link className="navbar-item" to="/">
-                <img src="/images/logo-1024.png" alt="site logo" />
+                <figure className="image is-128x128">
+                  <img src="/images/logo.svg" alt="site logo" />
+                </figure>
               </Link>
               <a
                 href="#"
@@ -89,18 +105,9 @@ export default class Header extends React.Component {
               </a>
             </div>
             <div className={isActive ? 'navbar-menu is-active' : 'navbar-menu'}>
-              <div className="navbar-start">
-                <Link to="/" className="navbar-item">
-                  Home
-                </Link>
-                <Link to="/about" className="navbar-item">
-                  About
-                </Link>
-                <Link to="/news" className="navbar-item">
-                  News
-                </Link>
-                <Link to="/contact" className="navbar-item">
-                  Contact
+              <div className="navbar-end  ">
+                <Link to="/signin" className="home navbar-item">
+                  <h1 className=" text title is-size-5	">Sign in</h1>
                 </Link>
               </div>
             </div>

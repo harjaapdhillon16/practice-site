@@ -13,6 +13,7 @@ export const theme = {
   // Accent colors can be used to bring attention to design elements
   // by contrasting with the rest of the palette.
   lightAccent: '#FFDC57',
+  homepageBorderColor: '#dee1e3',
   // Use this color as the background for your dark-on-light designs,
   // or the text color of an inverted design.
   lightShades,
