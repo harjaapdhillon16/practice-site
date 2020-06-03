@@ -53,7 +53,7 @@ const Contact = () => (
               </div>
               <div className="column is-12">
                 <button className="button is-primary is-medium" type="button">
-                  Send Message
+                  Sign in
                 </button>
               </div>
               <div className="column is-12">
