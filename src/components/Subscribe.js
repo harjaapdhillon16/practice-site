@@ -4,9 +4,11 @@ import styled from 'styled-components';
 const Section = styled.section`
   .input {
     min-height: 3rem;
+    box-shadow: none !important;
   }
   .button {
     min-height: 3rem;
+    box-shadow: none !important;
   }
 `;
 

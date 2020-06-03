@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
 const Container = styled.div`
   img {
@@ -28,10 +29,10 @@ const SocialData = [
   },
 ];
 const PageLinks = [
-  { page: 'About' },
-  { page: 'Faq' },
-  { page: 'Contact' },
-  { page: 'Blog' },
+  { page: 'About', link: '/about' },
+  { page: 'Faq', link: '/faq' },
+  { page: 'Contact', link: '/contact' },
+  { page: 'Blog', link: '/blog' },
 ];
 
 const Footer = () => {
@@ -55,7 +56,9 @@ const Footer = () => {
                 ))}
                 {PageLinks.map(data => (
                   <div className="column is-3">
-                    <h1 className="subtitle is-6">{data.page}</h1>
+                    <Link to={data.link}>
+                      <h1 className="subtitle is-6">{data.page}</h1>
+                    </Link>
                   </div>
                 ))}
               </div>
